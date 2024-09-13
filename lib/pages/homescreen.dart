@@ -40,23 +40,25 @@ class _HomeState extends State<Home> {
                   fillColor: const Color.fromARGB(255, 212, 210, 210)),
             ),
           ),
-          const ListTile(
-            leading: CircleAvatar(
-              radius: 30,
-              backgroundImage: AssetImage('images/20240414_223412.jpg'),
-            ),
-            title: Text(
-              'John Doe',
-              style: TextStyle(color: Colors.white),
-            ),
-            subtitle: Text(
-              'Hello...',
-              style:
-                  TextStyle(color: Color.fromARGB(255, 3, 3, 3), fontSize: 14),
-            ),
-            trailing: Text(
-              '2:00',
-              style: TextStyle(fontSize: 12),
+          const SingleChildScrollView(
+            child: ListTile(
+              leading: CircleAvatar(
+                radius: 30,
+                backgroundImage: AssetImage('images/20240414_223412.jpg'),
+              ),
+              title: Text(
+                'John Doe',
+                style: TextStyle(color: Colors.white),
+              ),
+              subtitle: Text(
+                'Hello...',
+                style: TextStyle(
+                    color: Color.fromARGB(255, 3, 3, 3), fontSize: 14),
+              ),
+              trailing: Text(
+                '2:00',
+                style: TextStyle(fontSize: 12),
+              ),
             ),
           ),
           const ListTile(
